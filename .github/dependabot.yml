@@ -5,7 +5,12 @@ updates:
     directory: '/'
     schedule:
       interval: 'daily'
-    open-pull-requests-limit: 15
+
+  # Dependencies for Gradle
+  - package-ecosystem: 'gradle'
+    directory: '/'
+    schedule:
+      interval: 'daily'
 
   # Dependencies for GitHub Actions
   - package-ecosystem: 'github-actions'
