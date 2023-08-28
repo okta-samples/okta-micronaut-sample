@@ -2,7 +2,6 @@ micronaut:
   application:
     name: app
   security:
-    enabled: true
     authentication: idtoken
     oauth2:
       clients:
@@ -14,16 +13,3 @@ micronaut:
     endpoints:
       logout:
         get-allowed: true
-    token:
-      jwt:
-        enabled: true
-        claims-validators:
-          issuer: ${ISSUER}
-        signatures:
-          jwks:
-            okta:
-              url: ${ISSUER}/v1/keys
-netty:
-  default:
-    allocator:
-      max-order: 3
