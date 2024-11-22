@@ -29,7 +29,7 @@ jobs:
       - name: Set environment variables
         run: |
           echo "ISSUER=https://issuer.com" >> $GITHUB_ENV
-          echo "CLIENT_ID=someId" >> $GITHUB_ENV
+          echo "CLIENT_ID=clientId" >> $GITHUB_ENV
           echo "CLIENT_SECRET=someSecret" >> $GITHUB_ENV
       - name: Build and test
         run: mvn -B -ntp verify
