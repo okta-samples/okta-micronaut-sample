@@ -28,8 +28,8 @@ jobs:
           java-package: jdk
       - name: Set environment variables
         run: |
-          echo "ISSUER=${{ secrets.ISSUER }}" >> $GITHUB_ENV
-          echo "CLIENT_ID=${{ secrets.CLIENT_ID }}" >> $GITHUB_ENV
-          echo "CLIENT_SECRET=${{ secrets.CLIENT_SECRET }}" >> $GITHUB_ENV
+          echo "ISSUER=https://issuer.com" >> $GITHUB_ENV
+          echo "CLIENT_ID=clientId" >> $GITHUB_ENV
+          echo "CLIENT_SECRET=clientSecret" >> $GITHUB_ENV
       - name: Build and test
         run: mvn -B -ntp verify
