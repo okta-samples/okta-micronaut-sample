@@ -6,6 +6,7 @@ micronaut:
     oauth2:
       clients:
         okta:
+          scopes: ['openid', 'profile', 'email', 'offline_access']
           client-id: ${CLIENT_ID}
           client-secret: ${CLIENT_SECRET}
           openid:
